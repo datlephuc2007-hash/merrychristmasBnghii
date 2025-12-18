@@ -133,13 +133,20 @@
         bgMusic.loop = true; bgMusic.volume = 0.3;
 
         const loader = new THREE.TextureLoader();
-       const photoFiles = [
-    'https://i.postimg.cc/8z3GnhBp/Ri1.jpg',
-    'https://i.postimg.cc/ZRPhRXkb/Ri2.jpg', 
-    'https://i.postimg.cc/G3QC10J4/Ri3.jpg', 
-    'https://i.postimg.cc/C1sWYDDZ/Ri4.jpg', 
-    'https://i.postimg.cc/fyHpSNBK/Ri5.jpg'
-    ];
+    //    const photoFiles = [
+    // 'https://i.postimg.cc/8z3GnhBp/Ri1.jpg',
+    // 'https://i.postimg.cc/ZRPhRXkb/Ri2.jpg', 
+    // 'https://i.postimg.cc/G3QC10J4/Ri3.jpg', 
+    // 'https://i.postimg.cc/C1sWYDDZ/Ri4.jpg', 
+    // 'https://i.postimg.cc/fyHpSNBK/Ri5.jpg'
+    // ];
+        const photoFiles = [
+    'Ri1.jpg',
+    'Ri2.jpg',
+    'Ri3.jpg',
+    'Ri4.jpg',
+    'Ri5.jpg'
+];
         const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
@@ -521,4 +528,5 @@
 
 
 </html>
+
 
