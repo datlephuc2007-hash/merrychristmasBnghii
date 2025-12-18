@@ -313,16 +313,18 @@
                 photoMeshes.push(mesh);
             }
         }
-
-        function createDecorations() {
-            // Vandiep
+// ... (các dòng phía trên giữ nguyên)
+            function createDecorations() {
+    // Vandiep
             const canvas = document.createElement('canvas');
-            canvas.width = 3050; canvas.height = 256;
+     // SỬA DÒNG NÀY: Tăng width từ 1024 lên 2048
+            canvas.width = 2048; canvas.height = 256;
             const ctx = canvas.getContext('2d');
             ctx.font = 'bold italic 90px "Times New Roman"';
             ctx.fillStyle = '#FFD700'; ctx.textAlign = 'center';
             ctx.shadowColor = "#FF0000"; ctx.shadowBlur = 40;
-            ctx.fillText("MERRY CHRISTMAS 公主 RI", 512, 130);
+    // SỬA DÒNG NÀY: Thay đổi vị trí x từ 512 thành 1024
+            ctx.fillText("MERRY CHRISTMAS 公主 RI", 1024, 130);
 
             const tex = new THREE.CanvasTexture(canvas);
             const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, blending: THREE.AdditiveBlending });
@@ -521,6 +523,7 @@
 
 
 </html>
+
 
 
 
